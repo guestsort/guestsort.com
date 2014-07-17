@@ -28,7 +28,7 @@ a {
 section {
   display: none;
 
-  padding: 138px 0 150px 0;
+  padding: 188px 0 200px 0;
   @include responsive(xs) {
     padding: 50px 0 50px;
   }
@@ -105,7 +105,7 @@ footer {
 
   @include clearfix();
   z-index: -1;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   background-color: #111;
 
   .email {
@@ -121,7 +121,7 @@ footer {
     padding-top: 0;
     font-weight: lighter;
     color: #fff;
-    width: 329px;
+    width: 227px;
     @include responsive(xs) {
       width: 100%;
       font-size: 16px;
