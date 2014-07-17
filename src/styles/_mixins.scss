@@ -1,0 +1,52 @@
+////////////
+// MIXINS //
+////////////
+
+// Clearfix
+// --------
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Responsive
+// ----------
+@mixin responsive($point) {
+  @if $point == lg {
+    @media (min-width: $lg_width + $padding + 10) { @content; }
+  }
+  @else if $point == md {
+    @media (max-width: $lg_width + $padding + 10) and (min-width: $md_width + $padding + 10) { @content; }
+  }
+  @else if $point == sm {
+    @media (max-width: $md_width + $padding + 10) and (min-width: $sm_width + $padding + 10) { @content; }
+  }
+  @else if $point == xs {
+    @media (max-width: $sm_width + $padding + 10) { @content; }
+  }
+}
+
+// Width
+// -----
+@mixin width($padding:"") {
+  width: $md_width + unquote($padding); //default
+
+  @include responsive(lg) {
+    width: $lg_width + unquote($padding) !important;
+  }
+  @include responsive(md) {
+    width: $md_width + unquote($padding) !important;
+  }
+  @include responsive(sm) {
+    width: $sm_width + unquote($padding) !important;
+  }
+  @include responsive(xs) {
+    width: $xs_width + unquote($padding) !important;
+  }
+}

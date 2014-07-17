@@ -1,0 +1,75 @@
+doctype html
+html(lang="en").no-js
+  head
+
+    meta(charset='utf-8')
+
+    title GuestSort — Goodbye for now.
+    meta(name='viewport', content='width=device-width, user-scalable=0')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='description', content='Our social guest list service is no longer available. Don\'t worry, we\'ll be back in the future.')
+    meta(name='application-name', content='GuestSort')
+
+    meta(property='fb:app_id', content='377029135662173')
+    meta(property='og:type', content='website')
+    meta(property='og:title', content='Guest list app for iOS — GuestSort')
+    meta(property='og:image', content='images/ios_icon@2x.png?#{ hash }')
+    meta(property='og:description', content='Guest list app for iPad & iPhone. Create Facebook integrated social guest lists that maximise your event\'s exposure.')
+    meta(property='og:url', content='https://guestsort.com/')
+
+    link(rel='icon', href='images/favicon@2x.png?#{ hash }', type='image/x-icon')
+    link(rel='shortcut icon', href='images/favicon@2x.png?#{ hash }', type='image/x-icon')
+    link(rel='apple-touch-icon-precomposed', href='images/ios_icon@2x.png?#{ hash }', type='image/png')
+
+    link(rel="stylesheet", href="styles/main.css?#{ hash }")
+
+  body
+    section
+      .container
+        h1 Goodbye for now.
+        p Our social guest list service is no longer available. We'll be back soon.
+
+    footer
+      .container
+        h2 Don't miss a thing.&nbsp;
+          strong Subscribe to our mailing list
+          |.
+
+        form#mc-embedded-subscribe-form.clearfix.validate(action='http://guestsort.us5.list-manage.com/subscribe/post?u=77665c3557cbd8363202f9307&id=c6c7e20f2f', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='novalidate')
+          .mc-field-group.clearfix
+            input#mce-EMAIL.required.email.input-lg(type='email', value='', name='EMAIL', placeholder="Your email address", autocomplete="off")
+            .clear
+              input#mc-embedded-subscribe.button.btn.btn-lg(type='submit', value='Subscribe', name='subscribe')
+          #mce-responses.clear
+            #mce-error-response.response(style='display: none;')
+            #mce-success-response.response(style='display: none;')
+          div(style='position: absolute; left: -5000px;')
+            input(type='text', name='b_77665c3557cbd8363202f9307_c6c7e20f2f', tabindex='-1', value='')
+
+        ul
+            li
+              a(href="mailto:hello@guestsort.com?Subject=Hello") Contact Us
+            li
+              a(href="inside.guestsort.com") Blog
+        p.copyright
+          i
+          | GuestSort &copy; #{ year }
+
+    script(type='text/javascript', src="scripts/main.js?#{ hash }")
+
+    script(type='text/javascript', src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
+    script(type='text/javascript').
+      (function($) {
+      window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';
+      }(jQuery));
+      var $mcj = jQuery.noConflict(true);
+
+    script(type='text/javascript').
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21077402-6']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();

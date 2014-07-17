@@ -1,0 +1,23 @@
+///////////
+// Fonts //
+///////////
+
+@font-face {
+  font-family: "Trade Gothic";
+  src: url("../fonts/regular.eot");
+  src: url("../fonts/Trade-Gothic-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Trade Gothic";
+  src: url("../fonts/bold.eot");
+  src: url("../fonts/Trade-Gothic-Bold.woff") format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Trade Gothic";
+  src: url("../fonts/light.eot");
+  src: url("../fonts/Trade-Gothic-Light.woff") format('woff');
+  font-weight: lighter;
+}

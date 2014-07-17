@@ -1,0 +1,227 @@
+@import "../../node_modules/normalize-css/normalize.css";
+@import "../../node_modules/animate.css/animate.css";
+@charset "UTF-8";
+
+@import "_vars.scss";
+@import "_mixins.scss";
+@import "_fonts.scss";
+@import "_form.scss";
+
+body {
+  font-family: $font;
+  background-color: #111;
+  font-size: 14px;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+}
+
+.container {
+  @include width();
+  margin: auto;
+}
+
+section {
+  display: none;
+
+  padding: 138px 0 150px 0;
+  @include responsive(xs) {
+    padding: 50px 0 50px;
+  }
+
+  background-color: $orange;
+  border-bottom: 2px solid white;
+  z-index: 1000;
+
+  .container {
+    background: url(../images/logo.png);
+    @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+      background: url(../images/logo@2x.png);
+    }
+    background-repeat: no-repeat !important;
+    background-size: 37px 75px !important;
+    padding-left: 50px;
+    padding-top: 12px;
+    @include responsive(xs) {
+      padding-left: 0px;
+      padding-top: 90px;
+    }
+  }
+
+  h1, h2, p {
+    font-size: 3em;
+    letter-spacing: -2px;
+
+    @include responsive(xs) {
+      font-size: 38px;
+      letter-spacing: -1px;
+    }
+  }
+
+  h1 {
+    margin: 0 0 10px 0;
+  }
+
+  p {
+    font-weight: lighter;
+    margin: 10px 0 0 0;
+    line-height: 48px;
+
+    @include responsive(xs) {
+      line-height: 46px;
+    }
+  }
+}
+
+form {
+  padding-left: 50px;
+  @include responsive(xs) {
+    padding: 0;
+  }
+  .mce_inline_error {
+    padding-top: 5px;
+    color: #e74c3c;
+  }
+
+  #mce-responses {
+    #mce-error-response {
+      color: #e74c3c;
+      margin-top: 5px;
+    }
+
+    #mce-success-response {
+      color: #27ae60;
+      margin-top: 5px;
+    }
+  }
+}
+
+footer {
+  display: none;
+
+  @include clearfix();
+  z-index: -1;
+  padding-bottom: 20px;
+  background-color: #111;
+
+  .email {
+    display: inline;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    border-radius: 0;
+    font-size: 22px;
+    padding-left: 0;
+    padding-bottom: 5px;
+    padding-top: 0;
+    font-weight: lighter;
+    color: #fff;
+    width: 329px;
+    @include responsive(xs) {
+      width: 100%;
+      font-size: 16px;
+      padding-bottom: 0;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: white;
+      color: white;
+    }
+  }
+
+  .clear {
+    display: inline;
+    .btn {
+      font-size: 16px !important;
+      font-weight: lighter !important;
+      background: none !important;
+      border: 1px solid white !important;
+      border-radius: 5px !important;
+      margin-left: 10px!important;
+      padding-top: 10px!important;
+      padding-bottom: 13px!important;
+
+      @include responsive(xs) {
+        float: right;
+        margin: 10px 0 0 0;
+        font-size: 13px !important;
+        padding-top: 7px!important;
+        padding-bottom: 10px!important;
+      }
+
+      &:hover {
+        background: #fff !important;
+        color: #111;
+      }
+      &:focus, &:active {
+        outline: none;
+        color: #fff !important;
+        background: #666 !important;
+      }
+    }
+  }
+
+  p, ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    padding-left: 50px;
+    @include responsive(xs) {
+      padding: 0;
+      font-size: 22px;
+    }
+    font-size: 2em;
+    letter-spacing: -1px;
+    font-weight: lighter;
+  }
+
+  form {
+    margin-bottom: 50px;
+  }
+  ul {
+    padding-left: 50px;
+    @include responsive(xs) {
+      padding: 0;
+    }
+    float: left;
+    line-height: 28px;
+
+    li {
+      display: inline;
+      list-style-type: none;
+      margin-right: 3px;
+      padding-right: 20px;
+
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
+
+  p.copyright {
+    float: right;
+
+    i {
+      display: inline-block;
+      width: 10px;
+      height: 20px;
+      background: url(../images/footer_logo.png);
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        background: url(../images/footer_logo@2x.png);
+      }
+      background-repeat: no-repeat !important;
+      background-size: 10px 20px !important;
+      position: relative;
+      top: 5px;
+      margin-right: 3px;
+    }
+  }
+}

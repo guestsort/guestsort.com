@@ -1,0 +1,22 @@
+{
+  "name": "GuestSort-Closedown",
+  "version": "0.0.1",
+  "homepage": "https://github.com/guestsort/guestsort.github.io",
+  "authors": [
+    "Ryan Brodie <ryan@guestsort.com>"
+  ],
+  "description": "Our temporary closedown splash page while we work on updating the service.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0",
+    "modernizr": "~2.8.3"
+  }
+}
