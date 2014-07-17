@@ -3,9 +3,9 @@
 //= require /../../node_modules/jquery/dist/jquery.js
 `
 
-$(window).load ->
-  if window.location.host == "guestsort.com" and window.location.protocol != "https:"
-    window.location.protocol = "https"
+# $(window).load ->
+#   if window.location.host == "guestsort.com" and window.location.protocol != "https:"
+#     window.location.protocol = "https"
 
 $(document).ready ->
 
