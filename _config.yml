@@ -1,0 +1,9 @@
+url: https://guestsort.com
+enforce_ssl: guestsort.com
+
+# Twitter
+twitter_user: "guestsort"
+twitter_tweet_button: true
+
+# Google Analytics
+google_analytics_tracking_id: "UA-21077402-6"
